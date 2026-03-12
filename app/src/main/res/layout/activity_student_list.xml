@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by name / roll / department" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.chip.Chip android:id="@+id/chipName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sort: Name"/>
+        <com.google.android.material.chip.Chip android:id="@+id/chipMarks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sort: Marks"/>
+        <com.google.android.material.chip.Chip android:id="@+id/chipRoll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sort: Roll"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

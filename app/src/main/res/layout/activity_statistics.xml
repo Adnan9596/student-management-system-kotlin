@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Statistics" android:textSize="24sp" android:textStyle="bold"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Students"/>
+    <TextView android:id="@+id/tvTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Average Marks"/>
+    <TextView android:id="@+id/tvAverage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Highest Marks"/>
+    <TextView android:id="@+id/tvHighest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lowest Marks"/>
+    <TextView android:id="@+id/tvLowest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Top Performer"/>
+    <TextView android:id="@+id/tvTopPerformer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"/>
+</LinearLayout>

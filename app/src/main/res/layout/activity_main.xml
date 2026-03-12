@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Mode" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quick Stats" android:textStyle="bold" android:textSize="18sp"/>
+                <TextView android:id="@+id/tvTotalStudents" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <TextView android:id="@+id/tvAverageMarks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                <TextView android:id="@+id/tvTopPerformer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N/A"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:id="@+id/cardAddStudent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:cardCornerRadius="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="Add Student" android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:id="@+id/cardViewStudents" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardCornerRadius="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="View Students" android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:id="@+id/cardSearchStudent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardCornerRadius="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="Search Student" android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:id="@+id/cardStatistics" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardCornerRadius="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="Statistics" android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:id="@+id/cardExportData" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardCornerRadius="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="Export Data (PDF)" android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
